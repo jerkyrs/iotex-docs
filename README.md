@@ -514,20 +514,16 @@ ioctl is up-to-date now.
 ```
 
 ## Bookkeeper
-Bookkeeper = Dumper + Processor and handles bookkeeping.
+Bookkeeper is a reference implementation of reward distribution tool, which collects voting status and calculates corresponding voters' reward for a given delegate at a certain epoch.
 
 Bookkeeper can handle up to 300 voters.
-
-Attention: 
-This Bookkeeper is a REFERENCE IMPLEMENTATION of reward distribution tool provided by IOTEX FOUNDATION. IOTEX FOUNDATION disclaims all responsibility for any damages or losses (including, without limitation, financial loss, damages for loss in business projects, loss of profits or other consequential losses) arising in contract, tort or otherwise from the use of or inability to use the Bookkeeper, or from any action or decision taken as a result of using this Bookkeeper.
-
 
 ### Build
 ```
 go build
 ```
 
-### Get Voters' Rewards by Delegate Name 
+### Get Voters' Rewards Given A Delegate Name
 Usage: `bookkeeper [--epoch EPOCH_NUM] [--dist-percentage DIST_PERCENTAGE] [--bp BP_NAME] [--reward-address REWARD_ADDRESS]`
 
 ```
